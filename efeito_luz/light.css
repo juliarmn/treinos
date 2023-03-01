@@ -5,11 +5,7 @@
 }
 body {
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: Tilt Neon;
-  background-color: rgb(255, 244, 232);
+  background: rgb(15, 16, 20);
 }
 
 .container {
@@ -29,12 +25,32 @@ body {
   position: relative;
   width: 30px;
   height: 30px;
-  background: #ffc0cb;
+  background: #c0ffff;
   margin: 0 4px;
   border-radius: 50%;
-  box-shadow: 0 0 0 10px #ffcfd7, 0 0 50px pink, 0 0 100px pink;
+  box-shadow: 0 0 0 10px #41e5e836, 0 0 50px #c0ffff, 0 0 100px #c0ffff;
   animation: animate 15s linear infinite;
-
+  animation-duration: calc(200s / var(--i));
+}
+.bubbles span:nth-child(5n) {
+  background: #ed5544;
+  box-shadow: 0 0 0 10px #b0433d94, 0 0 50px #ed5544, 0 0 100px #ed5544;
+}
+.bubbles span:nth-child(2n) {
+  background: #fa0dce;
+  box-shadow: 0 0 0 10px #ce3bb086, 0 0 50px #fa0dce, 0 0 100px #fa0dce;
+}
+.bubbles span:nth-child(6n) {
+  background: #68e532;
+  box-shadow: 0 0 0 10px #50b03592, 0 0 50px #68e532, 0 0 100px #68e532;
+}
+.bubbles span:nth-child(3n) {
+  background: #af32e5;
+  box-shadow: 0 0 0 10px #8b35b07d, 0 0 50px #af32e5, 0 0 100px #af32e5;
+}
+.bubbles span:nth-child(4n) {
+  background: #e9723b;
+  box-shadow: 0 0 0 10px #bf7a357d, 0 0 50px #e9723b, 0 0 100px #e9723b;
 }
 
 @keyframes animate {
