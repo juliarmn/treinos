@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand";
+}
+
+body {
+  background-color: #121229e8;
+}
+
+.container {
+  width: 32rem;
+  height: 32rem;
+  position: absolute;
+  /* border: .0625rem solid #ffffff; */
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+
+}
+
+p.letra-N {
+  font-size: 48px;
+  color: #ffffff;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 0.3rem;
+}
+
+p.letra-M {
+  font-size: 48px;
+  color: #ffffff;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0.3rem;
+}
+
+.moon {
+  background-color: #ffffff;
+  position: absolute;
+  /* margin: auto; */
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  top: 40%;
+  left: 40%;
+  transform: rotateY(-50%);
+  box-shadow: 0 0 0 0.6rem rgba(255, 255, 255, 0.05), 0 0 0 1.2rem rgba(255, 255, 255, 0.05), 0 0 0 1.8rem rgba(255, 255, 255, 0.05);
+}
+
+
+.moon::after {
+  position: absolute;
+  background-color: #f0f8ff;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  top: 3.75rem;
+  left: 1.2rem;
+  box-shadow: 1rem -2rem 0 0.2rem #f0f8ff, 1.5rem -0.3rem 0 -0.05rem #f0f8ff;
+}
+
+.orbita {
+  width: 19rem;
+  height: 19rem;
+  /* border: 1px solid white; */
+  border-radius: 50%;
+  position: absolute;
+  bottom: -5.5rem;
+  left: -5.5rem;
+  animation: spin 9s infinite linear;
+}
+
+p.letra-o {
+  color: #ffffff;
+  position: absolute;
+  font-size: 4rem;
+  top: 0.75rem;
+  left: 0.75rem;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width 860px) {
+  .container {
+    width: 10rem;
+    height: 10rem;
+    font-size: 1.25rem;
+  }
+  .moon {
+    width: 4rem;
+    height: 4rem;
+  }
+}
